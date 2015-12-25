@@ -25,6 +25,8 @@
 - (IBAction)addTextAction:(id)sender {
     [self.textArray addObject:[NSString stringWithFormat:@"测试%ld",[self.textArray count]]];
     
+    //CODE SNIPPET<----- 代码段这里看是
+    
     NSMutableParagraphStyle *paragraphStyle = [NSMutableParagraphStyle new];
     paragraphStyle.lineSpacing = LINE_SPACING;
     NSAttributedString *str = [[NSAttributedString alloc] initWithString:[self textContent] attributes:@
@@ -35,6 +37,8 @@
                                }];
     //有一个问题就是如果只有一行，那么下方还会有个空白的行间距
     self.testLabel.attributedText = str;
+    
+    //>----- 代码段这里结束
 }
 
 - (void)didReceiveMemoryWarning {
