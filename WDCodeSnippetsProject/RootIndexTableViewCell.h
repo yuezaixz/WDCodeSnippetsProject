@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RootIndexTableViewCell.h
 //  WDCodeSnippetsProject
 //
 //  Created by 吴迪玮 on 15/12/25.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface RootIndexTableViewCell : UITableViewCell
 
+@property (strong, nonatomic) NSDictionary *indexItemDict;
 
 @end
-
