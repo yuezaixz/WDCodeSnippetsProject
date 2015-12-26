@@ -21,7 +21,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.navigationController.navigationBar.translucent = NO;
+    
+    
+    //CODE SNIPPET<----- 代码段这里看是
+    //这里隐藏防止NavigationBar挡住VC，这里我在StoryBoard的runtime中修改了，这里所以注释掉
+    //    self.navigationController.navigationBar.translucent = NO;
+    //>----- 代码段这里结束
     self.indexArray = @[@{@"name":@"UILabel行间距",@"class":@"LabelParagraphStyleViewController"},
                         @{@"name":@"SDWebImage例子",@"class":@"SDWebimageTestViewController"}];
      self.clearsSelectionOnViewWillAppear = NO;
