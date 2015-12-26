@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SDWebimageTestViewController">
             <connections>
+                <outlet property="dynamicImageView" destination="J0I-cg-Ul9" id="9e0-gH-Vl2"/>
                 <outlet property="progressImageView" destination="EL3-JQ-rT4" id="VBm-Hw-r0u"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -61,13 +62,16 @@
                                         <constraint firstAttribute="height" constant="88" id="v0h-MD-9wK"/>
                                     </constraints>
                                 </imageView>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nFG-Cj-hP0">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nFG-Cj-hP0">
                                     <rect key="frame" x="0.0" y="92" width="152" height="48"/>
                                     <color key="backgroundColor" red="0.72156862749999995" green="0.91372549020000005" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="12"/>
-                                    <state key="normal" title="Button">
+                                    <state key="normal" title="动态加载(图片加载过程会一截一截的显示)">
                                         <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
                                     </state>
+                                    <connections>
+                                        <action selector="dynamicDownAction:" destination="-1" eventType="touchUpInside" id="Gen-h3-uig"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
