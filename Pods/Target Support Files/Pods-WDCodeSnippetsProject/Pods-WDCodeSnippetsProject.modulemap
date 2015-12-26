@@ -1,0 +1,6 @@
+framework module Pods_WDCodeSnippetsProject {
+  umbrella header "Pods-WDCodeSnippetsProject-umbrella.h"
+
+  export *
+  module * { export * }
+}

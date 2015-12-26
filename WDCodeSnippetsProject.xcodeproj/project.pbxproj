@@ -16,9 +16,11 @@
 		A6BD01C91C2D166F00A70298 /* LabelParagraphStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD01C71C2D166F00A70298 /* LabelParagraphStyleViewController.m */; };
 		A6BD01CA1C2D166F00A70298 /* LabelParagraphStyleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6BD01C81C2D166F00A70298 /* LabelParagraphStyleViewController.xib */; };
 		A6BD01CD1C2D17CB00A70298 /* RootIndexTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD01CC1C2D17CB00A70298 /* RootIndexTableViewCell.m */; };
+		CDD9535477762E771A89E2E6 /* Pods_WDCodeSnippetsProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3545765074194CA70E7AFB /* Pods_WDCodeSnippetsProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6460178D907905831B95796C /* Pods-WDCodeSnippetsProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDCodeSnippetsProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WDCodeSnippetsProject/Pods-WDCodeSnippetsProject.debug.xcconfig"; sourceTree = "<group>"; };
 		A6BD01A51C2D146800A70298 /* WDCodeSnippetsProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WDCodeSnippetsProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6BD01A91C2D146800A70298 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A6BD01AB1C2D146800A70298 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -34,6 +36,8 @@
 		A6BD01C81C2D166F00A70298 /* LabelParagraphStyleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelParagraphStyleViewController.xib; sourceTree = "<group>"; };
 		A6BD01CB1C2D17CB00A70298 /* RootIndexTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootIndexTableViewCell.h; sourceTree = "<group>"; };
 		A6BD01CC1C2D17CB00A70298 /* RootIndexTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootIndexTableViewCell.m; sourceTree = "<group>"; };
+		EE3545765074194CA70E7AFB /* Pods_WDCodeSnippetsProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WDCodeSnippetsProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF59384394B38AF953709493 /* Pods-WDCodeSnippetsProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDCodeSnippetsProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-WDCodeSnippetsProject/Pods-WDCodeSnippetsProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDD9535477762E771A89E2E6 /* Pods_WDCodeSnippetsProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		086BDEC7BFCE058396ED3158 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE3545765074194CA70E7AFB /* Pods_WDCodeSnippetsProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		298126DC4190DA041A39EBCF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6460178D907905831B95796C /* Pods-WDCodeSnippetsProject.debug.xcconfig */,
+				FF59384394B38AF953709493 /* Pods-WDCodeSnippetsProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A6BD019C1C2D146800A70298 = {
 			isa = PBXGroup;
 			children = (
 				A6BD01A71C2D146800A70298 /* WDCodeSnippetsProject */,
 				A6BD01A61C2D146800A70298 /* Products */,
+				298126DC4190DA041A39EBCF /* Pods */,
+				086BDEC7BFCE058396ED3158 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,9 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6BD01BC1C2D146800A70298 /* Build configuration list for PBXNativeTarget "WDCodeSnippetsProject" */;
 			buildPhases = (
+				CB7AA40805D92BF325155EB1 /* Check Pods Manifest.lock */,
 				A6BD01A11C2D146800A70298 /* Sources */,
 				A6BD01A21C2D146800A70298 /* Frameworks */,
 				A6BD01A31C2D146800A70298 /* Resources */,
+				A8C9F3A44B8D943FE6DB9906 /* Embed Pods Frameworks */,
+				21F49B02CCB5A5A80576A76E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -165,6 +192,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21F49B02CCB5A5A80576A76E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WDCodeSnippetsProject/Pods-WDCodeSnippetsProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8C9F3A44B8D943FE6DB9906 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WDCodeSnippetsProject/Pods-WDCodeSnippetsProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB7AA40805D92BF325155EB1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A6BD01A11C2D146800A70298 /* Sources */ = {
@@ -283,6 +358,7 @@
 		};
 		A6BD01BD1C2D146800A70298 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6460178D907905831B95796C /* Pods-WDCodeSnippetsProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WDCodeSnippetsProject/Info.plist;
@@ -294,6 +370,7 @@
 		};
 		A6BD01BE1C2D146800A70298 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF59384394B38AF953709493 /* Pods-WDCodeSnippetsProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WDCodeSnippetsProject/Info.plist;
@@ -322,6 +399,7 @@
 				A6BD01BE1C2D146800A70298 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
