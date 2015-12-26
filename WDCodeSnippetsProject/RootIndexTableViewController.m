@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+//    self.navigationController.navigationBar.translucent = NO;
     self.indexArray = @[@{@"name":@"UILabel行间距",@"class":@"LabelParagraphStyleViewController"},
                         @{@"name":@"SDWebImage例子",@"class":@"SDWebimageTestViewController"}];
      self.clearsSelectionOnViewWillAppear = NO;

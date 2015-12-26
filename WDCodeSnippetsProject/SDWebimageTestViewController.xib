@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SDWebimageTestViewController">
             <connections>
+                <outlet property="progressImageView" destination="EL3-JQ-rT4" id="VBm-Hw-r0u"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +15,92 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZsB-5S-Gf7">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SG3-G4-oxr">
+                            <rect key="frame" x="5" y="8" width="153" height="140"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EL3-JQ-rT4">
+                                    <rect key="frame" x="0.0" y="0.0" width="153" height="88"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="88" id="Ap3-b5-aBD"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jjY-OZ-9Q5">
+                                    <rect key="frame" x="0.0" y="92" width="153" height="48"/>
+                                    <color key="backgroundColor" red="0.72156862749999995" green="0.91372549020000005" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="12"/>
+                                    <state key="normal" title="进度下载">
+                                        <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="progressDownAction:" destination="-1" eventType="touchUpInside" id="Wrl-Xr-PTH"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="EL3-JQ-rT4" firstAttribute="top" secondItem="SG3-G4-oxr" secondAttribute="top" id="Q7i-Cf-iRR"/>
+                                <constraint firstAttribute="height" constant="140" id="RPH-XO-DXD"/>
+                                <constraint firstItem="jjY-OZ-9Q5" firstAttribute="leading" secondItem="SG3-G4-oxr" secondAttribute="leading" id="XoB-p5-e6U"/>
+                                <constraint firstItem="jjY-OZ-9Q5" firstAttribute="top" secondItem="EL3-JQ-rT4" secondAttribute="bottom" constant="4" id="dBH-fc-gfv"/>
+                                <constraint firstAttribute="trailing" secondItem="jjY-OZ-9Q5" secondAttribute="trailing" id="kUr-oY-a3q"/>
+                                <constraint firstAttribute="trailing" secondItem="EL3-JQ-rT4" secondAttribute="trailing" id="q7O-kR-AiZ"/>
+                                <constraint firstItem="EL3-JQ-rT4" firstAttribute="leading" secondItem="SG3-G4-oxr" secondAttribute="leading" id="rMY-jc-GlD"/>
+                                <constraint firstAttribute="bottom" secondItem="jjY-OZ-9Q5" secondAttribute="bottom" id="xF3-qS-4WA"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DkC-d4-7hh">
+                            <rect key="frame" x="163" y="8" width="152" height="140"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J0I-cg-Ul9">
+                                    <rect key="frame" x="0.0" y="0.0" width="152" height="88"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="88" id="v0h-MD-9wK"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nFG-Cj-hP0">
+                                    <rect key="frame" x="0.0" y="92" width="152" height="48"/>
+                                    <color key="backgroundColor" red="0.72156862749999995" green="0.91372549020000005" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="12"/>
+                                    <state key="normal" title="Button">
+                                        <color key="titleColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="J0I-cg-Ul9" firstAttribute="leading" secondItem="DkC-d4-7hh" secondAttribute="leading" id="2ev-De-hLw"/>
+                                <constraint firstAttribute="bottom" secondItem="nFG-Cj-hP0" secondAttribute="bottom" id="7O2-TP-p2b"/>
+                                <constraint firstAttribute="trailing" secondItem="J0I-cg-Ul9" secondAttribute="trailing" id="IIA-Gt-lM8"/>
+                                <constraint firstItem="nFG-Cj-hP0" firstAttribute="top" secondItem="J0I-cg-Ul9" secondAttribute="bottom" constant="4" id="c1a-cM-Bwu"/>
+                                <constraint firstItem="J0I-cg-Ul9" firstAttribute="top" secondItem="DkC-d4-7hh" secondAttribute="top" id="ne0-TR-bIT"/>
+                                <constraint firstItem="nFG-Cj-hP0" firstAttribute="leading" secondItem="DkC-d4-7hh" secondAttribute="leading" id="s4E-fn-57Z"/>
+                                <constraint firstAttribute="trailing" secondItem="nFG-Cj-hP0" secondAttribute="trailing" id="sCv-uc-MtB"/>
+                                <constraint firstAttribute="height" constant="140" id="tv1-Qf-eYj"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="DkC-d4-7hh" secondAttribute="trailing" constant="5" id="9ia-qM-Uzm"/>
+                        <constraint firstItem="DkC-d4-7hh" firstAttribute="top" secondItem="ZsB-5S-Gf7" secondAttribute="top" constant="8" id="QHo-Xs-JqX"/>
+                        <constraint firstItem="SG3-G4-oxr" firstAttribute="leading" secondItem="ZsB-5S-Gf7" secondAttribute="leading" constant="5" id="erU-eu-Kxg"/>
+                        <constraint firstItem="SG3-G4-oxr" firstAttribute="top" secondItem="ZsB-5S-Gf7" secondAttribute="top" constant="8" id="pzL-de-yfr"/>
+                        <constraint firstItem="DkC-d4-7hh" firstAttribute="leading" secondItem="SG3-G4-oxr" secondAttribute="trailing" constant="5" id="u1G-AQ-hte"/>
+                        <constraint firstItem="DkC-d4-7hh" firstAttribute="width" secondItem="SG3-G4-oxr" secondAttribute="width" id="vPH-wV-yzY"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ZsB-5S-Gf7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="GtW-If-Z3W"/>
+                <constraint firstItem="ZsB-5S-Gf7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IrA-YF-rn6"/>
+                <constraint firstAttribute="trailing" secondItem="ZsB-5S-Gf7" secondAttribute="trailing" id="MlY-DF-zGn"/>
+                <constraint firstAttribute="bottom" secondItem="ZsB-5S-Gf7" secondAttribute="bottom" id="gp9-B5-mb2"/>
+            </constraints>
             <point key="canvasLocation" x="273" y="447"/>
         </view>
     </objects>

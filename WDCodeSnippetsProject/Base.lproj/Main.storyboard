@@ -59,6 +59,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="navigationBar.translucent" value="NO"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="Mbj-ak-aSF" kind="relationship" relationship="rootViewController" id="KNH-96-Zpt"/>
                     </connections>
