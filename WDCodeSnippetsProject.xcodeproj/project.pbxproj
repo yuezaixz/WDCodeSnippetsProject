@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A6020BA31C2E330C009E6B66 /* SDWebimageTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6020BA11C2E330C009E6B66 /* SDWebimageTestViewController.m */; };
-		A6020BA41C2E330C009E6B66 /* SDWebimageTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6020BA21C2E330C009E6B66 /* SDWebimageTestViewController.xib */; };
+		977F16866BF3C46C66453DD5 /* libPods-WDCodeSnippetsProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 155283BC553A46679A9779AD /* libPods-WDCodeSnippetsProject.a */; };
 		A6BD01AA1C2D146800A70298 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD01A91C2D146800A70298 /* main.m */; };
 		A6BD01AD1C2D146800A70298 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD01AC1C2D146800A70298 /* AppDelegate.m */; };
 		A6BD01B31C2D146800A70298 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6BD01B11C2D146800A70298 /* Main.storyboard */; };
@@ -18,14 +17,13 @@
 		A6BD01C91C2D166F00A70298 /* LabelParagraphStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD01C71C2D166F00A70298 /* LabelParagraphStyleViewController.m */; };
 		A6BD01CA1C2D166F00A70298 /* LabelParagraphStyleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6BD01C81C2D166F00A70298 /* LabelParagraphStyleViewController.xib */; };
 		A6BD01CD1C2D17CB00A70298 /* RootIndexTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD01CC1C2D17CB00A70298 /* RootIndexTableViewCell.m */; };
-		CDD9535477762E771A89E2E6 /* Pods_WDCodeSnippetsProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3545765074194CA70E7AFB /* Pods_WDCodeSnippetsProject.framework */; };
+		A6F716C51C2E4041000B012C /* SDWebimageTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F716C31C2E4041000B012C /* SDWebimageTestViewController.m */; };
+		A6F716C61C2E4041000B012C /* SDWebimageTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6F716C41C2E4041000B012C /* SDWebimageTestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6460178D907905831B95796C /* Pods-WDCodeSnippetsProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDCodeSnippetsProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WDCodeSnippetsProject/Pods-WDCodeSnippetsProject.debug.xcconfig"; sourceTree = "<group>"; };
-		A6020BA01C2E330C009E6B66 /* SDWebimageTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebimageTestViewController.h; sourceTree = "<group>"; };
-		A6020BA11C2E330C009E6B66 /* SDWebimageTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebimageTestViewController.m; sourceTree = "<group>"; };
-		A6020BA21C2E330C009E6B66 /* SDWebimageTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDWebimageTestViewController.xib; sourceTree = "<group>"; };
+		155283BC553A46679A9779AD /* libPods-WDCodeSnippetsProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WDCodeSnippetsProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6014ACDDC6E4DFA13D3684AE /* Pods-WDCodeSnippetsProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDCodeSnippetsProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-WDCodeSnippetsProject/Pods-WDCodeSnippetsProject.release.xcconfig"; sourceTree = "<group>"; };
 		A6BD01A51C2D146800A70298 /* WDCodeSnippetsProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WDCodeSnippetsProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6BD01A91C2D146800A70298 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A6BD01AB1C2D146800A70298 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -41,8 +39,10 @@
 		A6BD01C81C2D166F00A70298 /* LabelParagraphStyleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelParagraphStyleViewController.xib; sourceTree = "<group>"; };
 		A6BD01CB1C2D17CB00A70298 /* RootIndexTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootIndexTableViewCell.h; sourceTree = "<group>"; };
 		A6BD01CC1C2D17CB00A70298 /* RootIndexTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootIndexTableViewCell.m; sourceTree = "<group>"; };
-		EE3545765074194CA70E7AFB /* Pods_WDCodeSnippetsProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WDCodeSnippetsProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF59384394B38AF953709493 /* Pods-WDCodeSnippetsProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDCodeSnippetsProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-WDCodeSnippetsProject/Pods-WDCodeSnippetsProject.release.xcconfig"; sourceTree = "<group>"; };
+		A6F716C21C2E4041000B012C /* SDWebimageTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebimageTestViewController.h; sourceTree = "<group>"; };
+		A6F716C31C2E4041000B012C /* SDWebimageTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebimageTestViewController.m; sourceTree = "<group>"; };
+		A6F716C41C2E4041000B012C /* SDWebimageTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SDWebimageTestViewController.xib; sourceTree = "<group>"; };
+		D7EAA2887AE50721507D736F /* Pods-WDCodeSnippetsProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDCodeSnippetsProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WDCodeSnippetsProject/Pods-WDCodeSnippetsProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,38 +50,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDD9535477762E771A89E2E6 /* Pods_WDCodeSnippetsProject.framework in Frameworks */,
+				977F16866BF3C46C66453DD5 /* libPods-WDCodeSnippetsProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		086BDEC7BFCE058396ED3158 /* Frameworks */ = {
+		1417E50D25A5352C6CCC6175 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EE3545765074194CA70E7AFB /* Pods_WDCodeSnippetsProject.framework */,
+				155283BC553A46679A9779AD /* libPods-WDCodeSnippetsProject.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		298126DC4190DA041A39EBCF /* Pods */ = {
+		3AA5D5450E82DF17188AD95D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6460178D907905831B95796C /* Pods-WDCodeSnippetsProject.debug.xcconfig */,
-				FF59384394B38AF953709493 /* Pods-WDCodeSnippetsProject.release.xcconfig */,
+				D7EAA2887AE50721507D736F /* Pods-WDCodeSnippetsProject.debug.xcconfig */,
+				6014ACDDC6E4DFA13D3684AE /* Pods-WDCodeSnippetsProject.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		A6020B9F1C2E32D1009E6B66 /* SDWebView测试 */ = {
-			isa = PBXGroup;
-			children = (
-				A6020BA01C2E330C009E6B66 /* SDWebimageTestViewController.h */,
-				A6020BA11C2E330C009E6B66 /* SDWebimageTestViewController.m */,
-				A6020BA21C2E330C009E6B66 /* SDWebimageTestViewController.xib */,
-			);
-			name = "SDWebView测试";
 			sourceTree = "<group>";
 		};
 		A6BD019C1C2D146800A70298 = {
@@ -89,8 +79,8 @@
 			children = (
 				A6BD01A71C2D146800A70298 /* WDCodeSnippetsProject */,
 				A6BD01A61C2D146800A70298 /* Products */,
-				298126DC4190DA041A39EBCF /* Pods */,
-				086BDEC7BFCE058396ED3158 /* Frameworks */,
+				3AA5D5450E82DF17188AD95D /* Pods */,
+				1417E50D25A5352C6CCC6175 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,8 +95,8 @@
 		A6BD01A71C2D146800A70298 /* WDCodeSnippetsProject */ = {
 			isa = PBXGroup;
 			children = (
+				A6F716C11C2E4031000B012C /* SDWebimage */,
 				A6BD01BF1C2D155900A70298 /* UILabel行间距 */,
-				A6020B9F1C2E32D1009E6B66 /* SDWebView测试 */,
 				A6BD01A81C2D146800A70298 /* Supporting Files */,
 			);
 			path = WDCodeSnippetsProject;
@@ -140,6 +130,16 @@
 			name = "UILabel行间距";
 			sourceTree = "<group>";
 		};
+		A6F716C11C2E4031000B012C /* SDWebimage */ = {
+			isa = PBXGroup;
+			children = (
+				A6F716C21C2E4041000B012C /* SDWebimageTestViewController.h */,
+				A6F716C31C2E4041000B012C /* SDWebimageTestViewController.m */,
+				A6F716C41C2E4041000B012C /* SDWebimageTestViewController.xib */,
+			);
+			name = SDWebimage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,12 +147,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6BD01BC1C2D146800A70298 /* Build configuration list for PBXNativeTarget "WDCodeSnippetsProject" */;
 			buildPhases = (
-				CB7AA40805D92BF325155EB1 /* Check Pods Manifest.lock */,
+				D7157D2B911C3057A6A44451 /* Check Pods Manifest.lock */,
 				A6BD01A11C2D146800A70298 /* Sources */,
 				A6BD01A21C2D146800A70298 /* Frameworks */,
 				A6BD01A31C2D146800A70298 /* Resources */,
-				A8C9F3A44B8D943FE6DB9906 /* Embed Pods Frameworks */,
-				21F49B02CCB5A5A80576A76E /* Copy Pods Resources */,
+				45E8DCD420BB04ED5A955306 /* Embed Pods Frameworks */,
+				C71F8427C1D1973290382107 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -203,7 +203,7 @@
 				A6BD01CA1C2D166F00A70298 /* LabelParagraphStyleViewController.xib in Resources */,
 				A6BD01B81C2D146800A70298 /* LaunchScreen.storyboard in Resources */,
 				A6BD01B51C2D146800A70298 /* Assets.xcassets in Resources */,
-				A6020BA41C2E330C009E6B66 /* SDWebimageTestViewController.xib in Resources */,
+				A6F716C61C2E4041000B012C /* SDWebimageTestViewController.xib in Resources */,
 				A6BD01B31C2D146800A70298 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,22 +211,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		21F49B02CCB5A5A80576A76E /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WDCodeSnippetsProject/Pods-WDCodeSnippetsProject-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A8C9F3A44B8D943FE6DB9906 /* Embed Pods Frameworks */ = {
+		45E8DCD420BB04ED5A955306 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -241,7 +226,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WDCodeSnippetsProject/Pods-WDCodeSnippetsProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CB7AA40805D92BF325155EB1 /* Check Pods Manifest.lock */ = {
+		C71F8427C1D1973290382107 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WDCodeSnippetsProject/Pods-WDCodeSnippetsProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7157D2B911C3057A6A44451 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -267,7 +267,7 @@
 				A6BD01AD1C2D146800A70298 /* AppDelegate.m in Sources */,
 				A6BD01C51C2D15BA00A70298 /* RootIndexTableViewController.m in Sources */,
 				A6BD01AA1C2D146800A70298 /* main.m in Sources */,
-				A6020BA31C2E330C009E6B66 /* SDWebimageTestViewController.m in Sources */,
+				A6F716C51C2E4041000B012C /* SDWebimageTestViewController.m in Sources */,
 				A6BD01CD1C2D17CB00A70298 /* RootIndexTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,7 +376,7 @@
 		};
 		A6BD01BD1C2D146800A70298 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6460178D907905831B95796C /* Pods-WDCodeSnippetsProject.debug.xcconfig */;
+			baseConfigurationReference = D7EAA2887AE50721507D736F /* Pods-WDCodeSnippetsProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WDCodeSnippetsProject/Info.plist;
@@ -388,7 +388,7 @@
 		};
 		A6BD01BE1C2D146800A70298 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF59384394B38AF953709493 /* Pods-WDCodeSnippetsProject.release.xcconfig */;
+			baseConfigurationReference = 6014ACDDC6E4DFA13D3684AE /* Pods-WDCodeSnippetsProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WDCodeSnippetsProject/Info.plist;
