@@ -22,7 +22,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.indexArray = @[@{@"name":@"UILabel行间距",@"class":@"LabelParagraphStyleViewController"}];
+    self.indexArray = @[@{@"name":@"UILabel行间距",@"class":@"LabelParagraphStyleViewController",
+                          @"name":@"SDWebImage例子",@"class":@"SDWebimageTestViewController"}];
      self.clearsSelectionOnViewWillAppear = NO;
 }
 
